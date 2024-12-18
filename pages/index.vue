@@ -1,5 +1,11 @@
 <script setup lang="ts">
+
+
 const count = ref(0);
+
+const { width } = useWindowSize();
+
+const isMobile = computed(() => width.value < 768);
 </script>
 
 <template>
@@ -9,7 +15,7 @@ const count = ref(0);
       label="Click"
       motion-animate="m-p-wobble"
       bg-color="bg-green"
-      size="large"
+      :size="isMobile ? 'medium' : 'large'"
       @click="count++"
     />
   </div>
