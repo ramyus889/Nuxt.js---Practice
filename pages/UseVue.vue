@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useHead({
+  title: "Nuxt.js - Vue",
+  link: [{ rel: "icon", type: "image/x-icon", href: "/img/Code/frontend.jpg" }],
+});
+</script>
 <template>
   <div class="">
     <v-btn>
