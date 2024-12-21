@@ -1,8 +1,8 @@
+<script setup lang="ts">
+const count = useState("count", () => 0);
+</script>
 <template>
   <div class="">
-    <v-btn>
-      Home
-      <v-tooltip activator="parent" location="start">Tooltip</v-tooltip>
-    </v-btn>
+    <v-btn @click="count++">Count: {{ count }}</v-btn>
   </div>
 </template>

@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["vuetify-nuxt-module", "@vueuse/nuxt"],
   css: ["./css/style.css"],
+  app: {
+    pageTransition: { name: "slide-left", mode: "out-in" },
+  },
   vuetify: {
     moduleOptions: {
       /* module specific options */
